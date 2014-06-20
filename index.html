@@ -4,98 +4,108 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>Bootstrap Sidebar</title>
-    <!--<meta name="generator" content="Bootply"/>-->
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <meta name="generator" content="Bootply"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
-    <!--<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>-->
-    <!--<![endif]&ndash;&gt;-->
-    <!--<link href="css/styles.css" rel="stylesheet">-->
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
 <div id="container-wrap-wrap">
     <div id="container-wrap">
         <div id="container">
             <!--Begin header-->
-            <header>
-                <div id="logo"><a href="#"><img src="images/PSE.png" alt="Logo"></a></div>
-                <div id="header_text">Stone Soup + Aﬀordable </br> (Refab?) Rehab</div>
-                <div id="right-header">
-                    <div id="search_bar">
-                        <input type="text"/>
-                        <input type="button"/>
+            <header class="page-header">
+                <div id="pg_hdr_cont_wrap_wrap">
+                    <div id="pg_hdr_cont_wrap" class="row">
+                        <div id="logo" class="col-md-offset-1 col-md-1"><a href="#"><img src="images/PSE.png" alt="Logo"></a></div>
+                        <div id="header_text" class="col-md-2">Stone Soup + Aﬀordable (Refab?) Rehab
+                        </div>
+                        <div id="right-header" class="col-md-offset-1 col-md-4">
+                            <div id="search_bar" class="pull-right">
+                                <input class="form-control" type="search" placeholder="Search"/>
+                                <span class="glyphicon glyphicon-search"></span>
+                            </div>
+                            </br>
+                            </br>
+                            <nav class="navbar navbar-default pull-right" role="navigation">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                    <nav>
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
                 </div>
             </header>
 
-            <!-- Begin Body -->
-
             <!--Hero of images-->
             <div class="hero_wrapper"></div>
+            <!-- Begin Body -->
 
-            <!--Left navigation column-->
-            <div class="side_nav">
-                <ul>
-                    <li><a href="#">Partners</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Impact</a></li>
-                </ul>
-            </div>
-
-            <!--Right Column-->
-            <div class="right_col">
-                <div class="right_col_header">What’s Happening</div>
-                <div class="right_col_content">
-                    <ul>
-                        <li>Keep Up to Date: what projects are we currently working on now? </li>
-                        <li>Reduce/Reuse/Recycle: how are local teens saving architectural lumber</li>
-                        <li>Get Into Shape: join a team to transform some local vacant lots on your street</li>
+            <div id="body_wrap" class="row">
+                <!--Left navigation column-->
+                <div class="side_nav col-md-2">
+                    <ul class="nav nav-tabs nav-stacked text-right">
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Impact</a></li>
                     </ul>
                 </div>
-            </div>
 
-            <!--Container Body -->
-            <div class="container">
-                <div class="quote"> “Architecture is some amazing quote that I heard here now</div>
-                <div class="content">
-                    <p>Sometimes we feel overwhelmed with the
-                        many challenges that lay ahead. However,
-                        when we see the on children’s faces at the
-                        youth center, it motivates us to do more and
-                        makes it all worth it. </p>
 
-                    <p>Sometimes we feel overwhelmed with the
-                        many challenges that lay ahead. However,
-                        when we see the on children’s faces at the
-                        youth center, it motivates us to do more and
-                        makes it all worth it.
-                        And more thigns about stuﬀ and we will
-                        keep ﬁlling space, More and more about
-                        sustainable education and such, and new
-                        projects, and why we’re awesome.</p>
+                <!--Container Body -->
+                <div class="col-md-6">
+                    <div class="quote"><blockquote>“Architecture is some amazing quote that I heard here now"</blockquote></div>
+                    <div class="content">
+                        <p>Sometimes we feel overwhelmed with the
+                            many challenges that lay ahead. However,
+                            when we see the on children’s faces at the
+                            youth center, it motivates us to do more and
+                            makes it all worth it. </p>
+
+                        <p>Sometimes we feel overwhelmed with the
+                            many challenges that lay ahead. However,
+                            when we see the on children’s faces at the
+                            youth center, it motivates us to do more and
+                            makes it all worth it.
+                            And more thigns about stuﬀ and we will
+                            keep ﬁlling space, More and more about
+                            sustainable education and such, and new
+                            projects, and why we’re awesome.</p>
+                    </div>
                 </div>
+
+                <!--Right Column-->
+                <div class="right_col col-md-offset-1 col-md-2">
+                    <div class="right_col_header bold"><strong>What’s Happening</strong></div>
+                    <div class="right_col_content">
+                        <ul class="list-group">
+                            <li class="list-group-item">Keep Up to Date: what projects are we currently working on now?</li>
+                            <li class="list-group-item">Reduce/Reuse/Recycle: how are local teens saving architectural lumber</li>
+                            <li class="list-group-item">Get Into Shape: join a team to transform some local vacant lots on your street</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Begin Footer -->
-            <footer>
-                <div class="univ_name">Carnegie Mellon University</div>
-                <div class="dept_name">School Of Architecture</div>
+            <footer class="panel-footer navbar navbar-fixed-bottom">
+                <div id="footer_content_wrapper" class="col-md-offset-2">
+                    <div class="univ_name">Carnegie Mellon University</div>
+                    <div class="dept_name">School Of Architecture</div>
+                </div>
             </footer>
         </div>
     </div>
 </div>
 <!-- script references -->
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>-->
-<!--<script src="js/bootstrap.min.js"></script>-->
-<!--<script src="js/scripts.js"></script>-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
