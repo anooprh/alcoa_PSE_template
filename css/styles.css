@@ -12,3 +12,8 @@
     background-color: #64666B;
     color: #ffffff;
 }
+
+#header_text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5em;
+}
