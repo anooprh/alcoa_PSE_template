@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Script Tutorials" />
+    <meta charset="utf-8"/>
+    <meta name="author" content="Script Tutorials"/>
     <title>Alcoa | Policy for sustainable education</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- attach CSS styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/stylessinglepage.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylessinglepage.css" rel="stylesheet"/>
+
+    <!-- attach JavaScripts -->
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!--<script src="js/bootstrap-transition.js"></script>-->
+    <script src="js/mainsinglepage.js"></script>
 </head>
 <body>
 
@@ -32,35 +39,98 @@
                 <li class="active"><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Projects</a></li>
-                <li><a href="#information">Information</a></li>
-                <li><a href="#google_map">Contact</a></li>
+                <li><a href="#information">Team</a></li>
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
 </nav>
 
 <!-- first section - Home -->
 <div id="home" class="home">
     <div class="text-vcenter">
-        <h1>Hello World</h1>
-        <h3>This is bootstrap-based layout</h3>
-        <a href="#about" class="btn btn-default btn-lg">Continue</a>
+        <h1>Alcoa</h1>
+
+        <h3>Policy for sustainable education</h3>
+
+        <h3>In collaboration with Carnegie Mellon University </h3>
+        <a href="#about" class="btn btn-default btn-lg btn-primary">Continue</a>
     </div>
 </div>
 <!-- /first section -->
 
 <!-- second section - About -->
 <div id="about" class="pad-section">
+
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <img src="images/logo.png" alt="" />
+        <div id="carousel-hazelwood" class="carousel slide" data-interval="8000" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-hazelwood" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-hazelwood" data-slide-to="1"></li>
+                <li data-target="#carousel-hazelwood" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Slider Content (Wrapper for slides )-->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="http://placehold.it/1200x600/123456&text=%20">
+
+                    <div class="carousel-caption">
+                        <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/JohnWoodsHouse.jpg/300px-JohnWoodsHouse.jpg"/>
+                        <h4>Hazelwood History</h4>
+
+                        <p>In the 1980s the steel industry began to decline. As the industry packed up,
+                            so did business and many residents. Like many areas in the rust-belt,
+                            Hazelwood fell into disrepair. Hazelwood was home to the city of Pittsburgh's
+                            last operating steel mill, the Hazelwood Coke Works, which was owned by Jones
+                            and Laughlin and later, its parent company, LTV, when it closed in 1998.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://placehold.it/1200x600/123456&text=%20">
+
+                    <div class="carousel-caption">
+                        <img src="http://upload.wikimedia.org/wikipedia/en/thumb/9/93/Lewis_Playground_in_Hazelwood.jpg/320px-Lewis_Playground_in_Hazelwood.jpg"/>
+                        <h4>Hazelwood Now</h4>
+
+                        <p>Recently, Hazelwood has been working to improve as a community. Many abandoned
+                            buildings have been razed, and new ones constructed in their place. In addition,
+                            some parks, such as Lewis Playground shown here, in the neighborhood have been
+                            updated to provide recreation for the residents.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://placehold.it/1200x600/123456&text=%20">
+
+                    <div class="carousel-caption">
+                        <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Pittsburgh_WEO_Night_1.jpg/1280px-Pittsburgh_WEO_Night_1.jpg"/>
+
+                        <h4>Local Climate & Design</h4>
+
+                        <p>The ALMONO Partnership, a non-profit organization led by the Regional Industrial
+                            Development Corporation (RIDC), is planning to re-develop 98 acres of riverfront
+                            property on the former Hazelwood Coke Works site, which is currently vacant brownfield
+                            land.In May 2013, the City of Pittsburgh Planning Commission approved the re-zoning
+                            of the former industrial land into zoning appropriate for ALMONO's planned uses, which
+                            include roughly 2 million square feet of office space, 1,300 housing units, and a l
+                            ight-industrial technology park, as well as riverfront recreation facilities.
+                            If completed in its entirety, the project is anticipated to cost US$900 million.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6 text-center">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet.</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum metus et ligula venenatis, at rhoncus nisi molestie. Pellentesque porttitor elit suscipit massa laoreet metus.</p>
-            </div>
+
+            <!-- Controls -->
+            <a class="carousel-control left" href="#carousel-hazelwood" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" onclick="$('#carousel-hazelwood').carousel('prev')"></span>
+            </a>
+            <a class="carousel-control right" href="#carousel-hazelwood" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" onclick="$('#carousel-hazelwood').carousel('next')"></span>
+            </a>
         </div>
+
     </div>
 </div>
 <!-- /second section -->
@@ -68,27 +138,36 @@
 <!-- third section - Services -->
 <div id="services" class="pad-section">
     <div class="container">
-        <h2 class="text-center">Our Services</h2> <hr />
+        <h2 class="text-center">Our Services</h2>
+        <hr/>
         <div class="row text-center">
             <div class="col-sm-3 col-xs-6">
                 <i class="glyphicon glyphicon-cloud"> </i>
                 <h4>Service 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras
+                    amet.</p>
             </div>
             <div class="col-sm-3 col-xs-6">
                 <i class="glyphicon glyphicon-leaf"> </i>
                 <h4>Service 2</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras
+                    amet.</p>
             </div>
             <div class="col-sm-3 col-xs-6">
                 <i class="glyphicon glyphicon-phone-alt"> </i>
                 <h4>Service 3</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras
+                    amet.</p>
             </div>
             <div class="col-sm-3 col-xs-6">
                 <i class="glyphicon glyphicon-bullhorn"> </i>
                 <h4>Service 4</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras
+                    amet.</p>
             </div>
         </div>
     </div>
@@ -105,7 +184,12 @@
                         <h2 class="panel-title">Additional information</h2>
                     </div>
                     <div class="panel-body lead">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit.
+                        Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non
+                        massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies
+                        mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at
+                        varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus,
+                        elit ligula varius dui, quis amet.
                     </div>
                 </div>
             </div>
@@ -115,7 +199,12 @@
                         <h2 class="panel-title">Additional information</h2>
                     </div>
                     <div class="panel-body lead">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit.
+                        Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non
+                        massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies
+                        mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at
+                        varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus,
+                        elit ligula varius dui, quis amet.
                     </div>
                 </div>
             </div>
@@ -129,16 +218,12 @@
 <footer>
     <!--<hr />-->
     <div class="container">
-        <p class="text-right">Copyright &copy; Your Company 2014</p>
+        <p class="text-right">&copy; Carnegie Mellon University | School Of Architecture</p>
     </div>
 </footer>
 <!-- /footer -->
 
 
-<!-- attach JavaScripts -->
-<script src="js/jquery-1.10.2.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/mainsinglepage.js"></script>
+
 </body>
 </html>

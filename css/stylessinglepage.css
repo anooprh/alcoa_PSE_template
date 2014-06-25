@@ -78,6 +78,7 @@ html, body {
 
 footer {
     background-color: #64666B;
+    color: #ffffff;
     padding: 20px 0;
 }
 footer .glyphicon {
@@ -86,4 +87,15 @@ footer .glyphicon {
 }
 footer .glyphicon:hover {
     color: #306d9f;
+}
+
+.carousel-caption img {
+    width:300px;
+    height:218px;
+    min-width:300px;
+    min-height:218px;
+    max-width:300px;
+    max-height:218px;
+    overflow:hidden;
+    margin: 50px auto;
 }
